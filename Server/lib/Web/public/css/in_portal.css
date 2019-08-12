@@ -23,44 +23,53 @@
 	font-weight: bold;
 }
 #logo{
+            position: relative;
+            left: -10px;
 	margin-top: -20px;
 }
 #kkutu-bulletin{
+            position: relative;
+            left: 30px;
+            top: -150px;
 	border: 0px;
-	margin-bottom: 5px;
+	margin-bottom: 0px;
 }
 
 #menu-bar a{
 	display: block;
+            position: relative;
 	float: left;
 	padding: 10px 5px;
-	border-radius: 5px;
-	margin: 0px 3px;
-	width: 120px;
+	margin: 0px 0px;
+            top: 207px;
+            left: -684px;
+	width: 153px;
 	font-size: 15px;
 	text-align: center;
-	box-shadow: 0px 1px 1px #333;
 }
 
 #game-start{
+            position: relative;
+            top: -10px;
 	float: left;
 	width: 315px;
 	height: 70px;
 	font-size: 20px;
 	font-weight: bold;
 	border: none;
-	border-bottom-left-radius: inherit;
-	border-bottom-right-radius: inherit;
 }
 	#game-start:hover{ font-size: 24px; background-color: rgba(0, 0, 0, 0.5); }
 .server-list-box{
-	float: right;
-	width: 320px;
+            position: relative;
+            top: 110px;
+            left: -505px;
+	float: light;
+	width: 325px;
 	background-color: rgba(0, 0, 0, 0.4);
 }
 .server-list-title{
 	padding: 2px 0px;
-	width: 100%;
+	width: 325px;
 	background-color: rgba(0, 0, 0, 0.4);
 }
 #server-refresh{
@@ -69,23 +78,24 @@
 }
 .server{
 	float: left;
-	margin: 2px 0px;
-	width: 320px;
-	height: 16px;
+	margin: 0px 0px;
+	width: 325px;
+	height: 50px;
 	font-size: 13px;
 	cursor: pointer;
+	background-color: rgba(0, 0, 0, 0.4);
 }
 	.server>div{ float: left; }
-	.server-status{ border-radius: 6px; margin: 2px; width: 12px; height: 12px; }
+	.server-status{ margin: 2px; width: 12px; height: 46px; }
 		.ss-o{ background-color: #3E3; }
 		.ss-p{ background-color: #EE3; }
 		.ss-q{ background-color: #F55; }
 		.ss-x{ background-color: #777; }
-	.server-name{ width: 60px; }
-	.server-people{ width: 190px; height: 100%; }
+	.server-name{ margin: 2px; width: 60px; font-size: 22px; }
+	.server-people{ width: 245px; height: 96%; }
 		.server-people>.graph-bar{ background-image: url(/img/blue_gauge.png); }
 		.server-people>label{ position: relative; display: block; top: -14px; width: 100%; text-align: center; font-size: 11px; }
-	.server-enter{ width: 50px; text-align: center; }
+            .server-enter{ margin: -15px 2px; width: 50px; text-align: center; }
 	.server:hover{ background-color: rgba(255, 255, 255, 0.1); }
 
 #Background{
