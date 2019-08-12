@@ -20,7 +20,7 @@ var WebSocket = require('ws');
 var File = require('fs');
 var Const = require("../const");
 var https = require('https');
-var Secure = require('../sub/secure');
+var secure = require('../sub/secure');
 var Server;
 var HTTPS_Server
 
@@ -102,8 +102,8 @@ MainDB.ready = function(){
 	JLog.success("DB is ready.");
 	KKuTu.init(MainDB, DIC, ROOM, GUEST_PERMISSION);
 };
-Server.on('connection', function(socket, info){
-	var chunk = info.url.slice(1).split('&');
+Server.on('connection', function(socket){
+	var chunk = socket.upgradeReq.url.slice(1).split('&');
 	var key = chunk[0];
 	var reserve = RESERVED[key] || {}, room;
 	var $c;
@@ -175,6 +175,8 @@ KKuTu.onClientMessage = function($c, msg){
 	if(!msg) return;
 	
 	switch(msg.type){
+		case 'drawingCanvas':
+			$c.drawingCanvas(msg)
 		case 'yell':
 			if(!msg.value) return;
 			if(!$c.admin) return;
