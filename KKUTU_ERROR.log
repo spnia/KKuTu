@@ -1,2 +1,165 @@
 This is an error log file of the game server.
 You may use like `tail -f KKUTU_ERROR.log` to watch this.
+:8496 [2019-8-7 3:03:10 PM] ERROR: TypeError: Cannot read property 'find' of undefined
+TypeError: Cannot read property 'find' of undefined
+    at tryTitle (C:\Users\Administrator\Desktop\trtwerfg\KKuTu-master\Server\lib\Game\games\classic.js:80:20)
+    at exports.Room.exports.getTitle (C:\Users\Administrator\Desktop\trtwerfg\KKuTu-master\Server\lib\Game\games\classic.js:125:2)
+    at exports.Room.my.route.my.routeSync (C:\Users\Administrator\Desktop\trtwerfg\KKuTu-master\Server\lib\Game\kkutu.js:1348:13)
+    at exports.Room.my.getTitle (C:\Users\Administrator\Desktop\trtwerfg\KKuTu-master\Server\lib\Game\kkutu.js:1336:13)
+    at exports.Room.my.start (C:\Users\Administrator\Desktop\trtwerfg\KKuTu-master\Server\lib\Game\kkutu.js:1139:6)
+    at exports.Room.my.ready (C:\Users\Administrator\Desktop\trtwerfg\KKuTu-master\Server\lib\Game\kkutu.js:1084:7)
+    at exports.Client.my.start (C:\Users\Administrator\Desktop\trtwerfg\KKuTu-master\Server\lib\Game\kkutu.js:679:9)
+    at Object.KKuTu.onClientMessage (C:\Users\Administrator\Desktop\trtwerfg\KKuTu-master\Server\lib\Game\slave.js:285:7)
+    at WebSocket.<anonymous> (C:\Users\Administrator\Desktop\trtwerfg\KKuTu-master\Server\lib\Game\kkutu.js:292:11)
+    at WebSocket.emit (events.js:198:13):8496 [2019-8-7 3:08:38 PM] ERROR: TypeError: Cannot read property 'find' of undefined
+TypeError: Cannot read property 'find' of undefined
+    at tryTitle (C:\Users\Administrator\Desktop\trtwerfg\KKuTu-master\Server\lib\Game\games\classic.js:80:20)
+    at exports.Room.exports.getTitle (C:\Users\Administrator\Desktop\trtwerfg\KKuTu-master\Server\lib\Game\games\classic.js:125:2)
+    at exports.Room.my.route.my.routeSync (C:\Users\Administrator\Desktop\trtwerfg\KKuTu-master\Server\lib\Game\kkutu.js:1348:13)
+    at exports.Room.my.getTitle (C:\Users\Administrator\Desktop\trtwerfg\KKuTu-master\Server\lib\Game\kkutu.js:1336:13)
+    at exports.Room.my.start (C:\Users\Administrator\Desktop\trtwerfg\KKuTu-master\Server\lib\Game\kkutu.js:1139:6)
+    at exports.Client.my.practice (C:\Users\Administrator\Desktop\trtwerfg\KKuTu-master\Server\lib\Game\kkutu.js:704:15)
+    at Object.KKuTu.onClientMessage (C:\Users\Administrator\Desktop\trtwerfg\KKuTu-master\Server\lib\Game\slave.js:296:7)
+    at WebSocket.<anonymous> (C:\Users\Administrator\Desktop\trtwerfg\KKuTu-master\Server\lib\Game\kkutu.js:292:11)
+    at WebSocket.emit (events.js:198:13)
+    at Receiver.ontext (C:\Users\Administrator\Desktop\trtwerfg\KKuTu-master\Server\lib\node_modules\ws\lib\WebSocket.js:841:10):8496 [2019-8-7 3:29:57 PM] ERROR: TypeError: Cannot read property 'find' of undefined
+TypeError: Cannot read property 'find' of undefined
+    at tryTitle (C:\Users\Administrator\Desktop\trtwerfg\KKuTu-master\Server\lib\Game\games\classic.js:80:20)
+    at exports.Room.exports.getTitle (C:\Users\Administrator\Desktop\trtwerfg\KKuTu-master\Server\lib\Game\games\classic.js:125:2)
+    at exports.Room.my.route.my.routeSync (C:\Users\Administrator\Desktop\trtwerfg\KKuTu-master\Server\lib\Game\kkutu.js:1348:13)
+    at exports.Room.my.getTitle (C:\Users\Administrator\Desktop\trtwerfg\KKuTu-master\Server\lib\Game\kkutu.js:1336:13)
+    at exports.Room.my.start (C:\Users\Administrator\Desktop\trtwerfg\KKuTu-master\Server\lib\Game\kkutu.js:1139:6)
+    at exports.Client.my.practice (C:\Users\Administrator\Desktop\trtwerfg\KKuTu-master\Server\lib\Game\kkutu.js:704:15)
+    at Object.KKuTu.onClientMessage (C:\Users\Administrator\Desktop\trtwerfg\KKuTu-master\Server\lib\Game\slave.js:296:7)
+    at WebSocket.<anonymous> (C:\Users\Administrator\Desktop\trtwerfg\KKuTu-master\Server\lib\Game\kkutu.js:292:11)
+    at WebSocket.emit (events.js:198:13)
+    at Receiver.ontext (C:\Users\Administrator\Desktop\trtwerfg\KKuTu-master\Server\lib\node_modules\ws\lib\WebSocket.js:841:10):8496 [2019-8-7 3:30:08 PM] ERROR: TypeError: Cannot read property 'findOne' of undefined
+TypeError: Cannot read property 'findOne' of undefined
+    at WebSocketServer.<anonymous> (C:\Users\Administrator\Desktop\trtwerfg\KKuTu-master\Server\lib\Game\slave.js:132:17)
+    at WebSocketServer.emit (events.js:198:13)
+    at C:\Users\Administrator\Desktop\trtwerfg\KKuTu-master\Server\lib\node_modules\ws\lib\WebSocketServer.js:91:14
+    at completeHybiUpgrade2 (C:\Users\Administrator\Desktop\trtwerfg\KKuTu-master\Server\lib\node_modules\ws\lib\WebSocketServer.js:284:5)
+    at completeHybiUpgrade1 (C:\Users\Administrator\Desktop\trtwerfg\KKuTu-master\Server\lib\node_modules\ws\lib\WebSocketServer.js:309:13)
+    at WebSocketServer.handleHybiUpgrade (C:\Users\Administrator\Desktop\trtwerfg\KKuTu-master\Server\lib\node_modules\ws\lib\WebSocketServer.js:337:3)
+    at WebSocketServer.handleUpgrade (C:\Users\Administrator\Desktop\trtwerfg\KKuTu-master\Server\lib\node_modules\ws\lib\WebSocketServer.js:173:26)
+    at Server.WebSocketServer._onServerUpgrade (C:\Users\Administrator\Desktop\trtwerfg\KKuTu-master\Server\lib\node_modules\ws\lib\WebSocketServer.js:89:12)
+    at Server.emit (events.js:198:13)
+    at onParserExecuteCommon (_http_server.js:553:14):8496 [2019-8-7 3:41:57 PM] ERROR: TypeError: Cannot read property 'find' of undefined
+TypeError: Cannot read property 'find' of undefined
+    at tryTitle (C:\Users\Administrator\Desktop\trtwerfg\KKuTu-master\Server\lib\Game\games\classic.js:80:20)
+    at exports.Room.exports.getTitle (C:\Users\Administrator\Desktop\trtwerfg\KKuTu-master\Server\lib\Game\games\classic.js:125:2)
+    at exports.Room.my.route.my.routeSync (C:\Users\Administrator\Desktop\trtwerfg\KKuTu-master\Server\lib\Game\kkutu.js:1348:13)
+    at exports.Room.my.getTitle (C:\Users\Administrator\Desktop\trtwerfg\KKuTu-master\Server\lib\Game\kkutu.js:1336:13)
+    at exports.Room.my.start (C:\Users\Administrator\Desktop\trtwerfg\KKuTu-master\Server\lib\Game\kkutu.js:1139:6)
+    at exports.Client.my.practice (C:\Users\Administrator\Desktop\trtwerfg\KKuTu-master\Server\lib\Game\kkutu.js:704:15)
+    at Object.KKuTu.onClientMessage (C:\Users\Administrator\Desktop\trtwerfg\KKuTu-master\Server\lib\Game\slave.js:296:7)
+    at WebSocket.<anonymous> (C:\Users\Administrator\Desktop\trtwerfg\KKuTu-master\Server\lib\Game\kkutu.js:292:11)
+    at WebSocket.emit (events.js:198:13)
+    at Receiver.ontext (C:\Users\Administrator\Desktop\trtwerfg\KKuTu-master\Server\lib\node_modules\ws\lib\WebSocket.js:841:10):8496 [2019-8-9 11:12:11 PM] ERROR: TypeError: Cannot read property 'split' of null
+TypeError: Cannot read property 'split' of null
+    at C:\Users\Administrator\Desktop\trtwerfg\KKuTu-master\Server\lib\Game\games\crossword.js:55:26
+    at callback (C:\Users\Administrator\Desktop\trtwerfg\KKuTu-master\Server\lib\sub\collection.js:316:13)
+    at Result.preCB (C:\Users\Administrator\Desktop\trtwerfg\KKuTu-master\Server\lib\sub\collection.js:298:6)
+    at Result.Query.handleReadyForQuery (C:\Users\Administrator\Desktop\trtwerfg\KKuTu-master\Server\lib\node_modules\pg\lib\query.js:144:10)
+    at Connection.<anonymous> (C:\Users\Administrator\Desktop\trtwerfg\KKuTu-master\Server\lib\node_modules\pg\lib\client.js:180:19)
+    at Connection.emit (events.js:198:13)
+    at Socket.<anonymous> (C:\Users\Administrator\Desktop\trtwerfg\KKuTu-master\Server\lib\node_modules\pg\lib\connection.js:133:12)
+    at Socket.emit (events.js:198:13)
+    at addChunk (_stream_readable.js:288:12)
+    at readableAddChunk (_stream_readable.js:269:11):8496 [2019-8-9 11:18:36 PM] ERROR: TypeError: Cannot read property 'split' of null
+TypeError: Cannot read property 'split' of null
+    at C:\Users\Administrator\Desktop\trtwerfg\KKuTu-master\Server\lib\Game\games\crossword.js:55:26
+    at callback (C:\Users\Administrator\Desktop\trtwerfg\KKuTu-master\Server\lib\sub\collection.js:316:13)
+    at Result.preCB (C:\Users\Administrator\Desktop\trtwerfg\KKuTu-master\Server\lib\sub\collection.js:298:6)
+    at Result.Query.handleReadyForQuery (C:\Users\Administrator\Desktop\trtwerfg\KKuTu-master\Server\lib\node_modules\pg\lib\query.js:144:10)
+    at Connection.<anonymous> (C:\Users\Administrator\Desktop\trtwerfg\KKuTu-master\Server\lib\node_modules\pg\lib\client.js:180:19)
+    at Connection.emit (events.js:198:13)
+    at Socket.<anonymous> (C:\Users\Administrator\Desktop\trtwerfg\KKuTu-master\Server\lib\node_modules\pg\lib\connection.js:133:12)
+    at Socket.emit (events.js:198:13)
+    at addChunk (_stream_readable.js:288:12)
+    at readableAddChunk (_stream_readable.js:269:11):8496 [2019-8-9 11:24:56 PM] ERROR: TypeError: Cannot read property 'split' of null
+TypeError: Cannot read property 'split' of null
+    at C:\Users\Administrator\Desktop\trtwerfg\KKuTu-master\Server\lib\Game\games\crossword.js:55:26
+    at callback (C:\Users\Administrator\Desktop\trtwerfg\KKuTu-master\Server\lib\sub\collection.js:316:13)
+    at Result.preCB (C:\Users\Administrator\Desktop\trtwerfg\KKuTu-master\Server\lib\sub\collection.js:298:6)
+    at Result.Query.handleReadyForQuery (C:\Users\Administrator\Desktop\trtwerfg\KKuTu-master\Server\lib\node_modules\pg\lib\query.js:144:10)
+    at Connection.<anonymous> (C:\Users\Administrator\Desktop\trtwerfg\KKuTu-master\Server\lib\node_modules\pg\lib\client.js:180:19)
+    at Connection.emit (events.js:198:13)
+    at Socket.<anonymous> (C:\Users\Administrator\Desktop\trtwerfg\KKuTu-master\Server\lib\node_modules\pg\lib\connection.js:133:12)
+    at Socket.emit (events.js:198:13)
+    at addChunk (_stream_readable.js:288:12)
+    at readableAddChunk (_stream_readable.js:269:11):8496 [2019-8-10 1:56:15 PM] ERROR: TypeError: Cannot read property 'split' of null
+TypeError: Cannot read property 'split' of null
+    at C:\Users\Administrator\Desktop\trtwerfg\KKuTu-master\Server\lib\Game\games\crossword.js:55:26
+    at callback (C:\Users\Administrator\Desktop\trtwerfg\KKuTu-master\Server\lib\sub\collection.js:316:13)
+    at Result.preCB (C:\Users\Administrator\Desktop\trtwerfg\KKuTu-master\Server\lib\sub\collection.js:298:6)
+    at Result.Query.handleReadyForQuery (C:\Users\Administrator\Desktop\trtwerfg\KKuTu-master\Server\lib\node_modules\pg\lib\query.js:144:10)
+    at Connection.<anonymous> (C:\Users\Administrator\Desktop\trtwerfg\KKuTu-master\Server\lib\node_modules\pg\lib\client.js:180:19)
+    at Connection.emit (events.js:198:13)
+    at Socket.<anonymous> (C:\Users\Administrator\Desktop\trtwerfg\KKuTu-master\Server\lib\node_modules\pg\lib\connection.js:133:12)
+    at Socket.emit (events.js:198:13)
+    at addChunk (_stream_readable.js:288:12)
+    at readableAddChunk (_stream_readable.js:269:11):8496 [2019-8-11 11:44:27 AM] ERROR: TypeError: Cannot read property 'NaN' of undefined
+TypeError: Cannot read property 'NaN' of undefined
+    at exports.Room.turnHint (C:\Users\Administrator\Desktop\trtwerfg\KKuTu-master\Server\lib\Game\games\drawing.js:113:21)
+    at Timeout._onTimeout (C:\Users\Administrator\Desktop\trtwerfg\KKuTu-master\Server\lib\Game\games\drawing.js:101:55)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10):8496 [2019-8-11 11:47:41 AM] ERROR: TypeError: Cannot read property 'NaN' of undefined
+TypeError: Cannot read property 'NaN' of undefined
+    at exports.Room.turnHint (C:\Users\Administrator\Desktop\trtwerfg\KKuTu-master\Server\lib\Game\games\drawing.js:113:21)
+    at Timeout._onTimeout (C:\Users\Administrator\Desktop\trtwerfg\KKuTu-master\Server\lib\Game\games\drawing.js:100:55)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10):8496 [2019-8-11 11:48:34 AM] ERROR: TypeError: Cannot read property 'NaN' of undefined
+TypeError: Cannot read property 'NaN' of undefined
+    at exports.Room.turnHint (C:\Users\Administrator\Desktop\trtwerfg\KKuTu-master\Server\lib\Game\games\drawing.js:113:21)
+    at Timeout._onTimeout (C:\Users\Administrator\Desktop\trtwerfg\KKuTu-master\Server\lib\Game\games\drawing.js:100:55)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10):8496 [2019-8-11 11:51:08 AM] ERROR: TypeError: Cannot read property 'NaN' of undefined
+TypeError: Cannot read property 'NaN' of undefined
+    at exports.Room.turnHint (C:\Users\Administrator\Desktop\trtwerfg\KKuTu-master\Server\lib\Game\games\drawing.js:113:21)
+    at Timeout._onTimeout (C:\Users\Administrator\Desktop\trtwerfg\KKuTu-master\Server\lib\Game\games\drawing.js:100:55)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10):8496 [2019-8-11 11:59:42 AM] ERROR: TypeError: Cannot read property 'NaN' of undefined
+TypeError: Cannot read property 'NaN' of undefined
+    at exports.Room.turnHint (C:\Users\Administrator\Desktop\trtwerfg\KKuTu-master\Server\lib\Game\games\drawing.js:113:21)
+    at Timeout._onTimeout (C:\Users\Administrator\Desktop\trtwerfg\KKuTu-master\Server\lib\Game\games\drawing.js:101:55)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10):8496 [2019-8-11 12:02:40 PM] ERROR: TypeError: Cannot read property 'NaN' of undefined
+TypeError: Cannot read property 'NaN' of undefined
+    at exports.Room.turnHint (C:\Users\Administrator\Desktop\trtwerfg\KKuTu-master\Server\lib\Game\games\drawing.js:113:21)
+    at Timeout._onTimeout (C:\Users\Administrator\Desktop\trtwerfg\KKuTu-master\Server\lib\Game\games\drawing.js:100:55)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10):8496 [2019-8-11 12:54:57 PM] ERROR: TypeError: Cannot read property 'NaN' of undefined
+TypeError: Cannot read property 'NaN' of undefined
+    at exports.Room.turnHint (C:\Users\Administrator\Desktop\trtwerfg\KKuTu-master\Server\lib\Game\games\drawing.js:113:21)
+    at Timeout._onTimeout (C:\Users\Administrator\Desktop\trtwerfg\KKuTu-master\Server\lib\Game\games\drawing.js:100:55)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10):8496 [2019-8-11 2:15:53 PM] ERROR: TypeError: Cannot read property 'NaN' of undefined
+TypeError: Cannot read property 'NaN' of undefined
+    at exports.Room.turnHint (C:\Users\Administrator\Desktop\trtwerfg\KKuTu-master\Server\lib\Game\games\drawing.js:113:21)
+    at Timeout._onTimeout (C:\Users\Administrator\Desktop\trtwerfg\KKuTu-master\Server\lib\Game\games\drawing.js:100:55)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10):8496 [2019-8-11 2:17:43 PM] ERROR: TypeError: Cannot read property 'NaN' of undefined
+TypeError: Cannot read property 'NaN' of undefined
+    at exports.Room.turnHint (C:\Users\Administrator\Desktop\trtwerfg\KKuTu-master\Server\lib\Game\games\drawing.js:113:21)
+    at Timeout._onTimeout (C:\Users\Administrator\Desktop\trtwerfg\KKuTu-master\Server\lib\Game\games\drawing.js:100:55)
+    at ontimeout (timers.js:436:11)
+    at tryOnTimeout (timers.js:300:5)
+    at listOnTimeout (timers.js:263:5)
+    at Timer.processTimers (timers.js:223:10)
