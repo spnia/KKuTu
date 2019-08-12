@@ -1,4 +1,4 @@
-//-
+﻿//-
 	Rule the words! KKuTu Online
 	Copyright (C) 2017 JJoriping(op@jjo.kr)
 	
@@ -42,6 +42,7 @@ block Subject
 	
 block JS
 	script(type='text/javascript', src='/js/in_game_kkutu.min.js')
+	script(type='text/javascript', src='/js/fabric.min.js')
 	script(src='https://www.google.com/recaptcha/api.js')
 	
 block CSS
@@ -72,23 +73,20 @@ block Middle
 		div#version= VERSION
 		div#intro-text= L('LOADING')
 	div.kkutu-menu
-		button#HelpBtn.for-lobby.for-master.for-normal.for-gaming(style='display: none; background-color: #BBBBBB;')!= L('help')
-		button#SettingBtn.for-lobby.for-master.for-normal.for-gaming(style='display: none; background-color: #CCCCCC;')!= L('settings')
-		button#CommunityBtn.for-lobby.for-master.for-normal.for-gaming(style='display: none; background-color: #DAA9FF;')!= L('community')
-		button#SpectateBtn.for-master.for-normal(style='display: none; background-color: #D19DFF;'): +FA('eye')
-		button#SetRoomBtn.for-master(style='display: none; background-color: #B0D2F3;'): +FA('magic')
-		button#NewRoomBtn.for-lobby(style='display: none; background-color: #8EC0F3;'): +FA('magic')
-		button#QuickRoomBtn.for-lobby(style='display: none; background-color: #B0D2F3;'): +FA('bolt')
-		//- button#ShopBtn.for-lobby(style='display: none; background-color: #B3E7B7;'): +FA('shopping-bag')
-		button#DictionaryBtn.for-lobby.for-master.for-normal.for-gaming(style='display: none; background-color: #73D07A;'): +FA('book')
-		//- button#WordPlusBtn.for-lobby.for-master.for-normal.for-gaming(style='display: none; background-color: #73D07A;')= L('wordPlus')
-		button#InviteBtn.for-master(style='display: none; background-color: #9FE669;'): +FA('envelope')
-		button#PracticeBtn.for-master.for-normal(style='display: none; background-color: #FCF5A9;'): +FA('plane')
-		button#ReadyBtn.for-normal(style='display: none; background-color: #FFC67F;'): +FA('play')
-		button#StartBtn.for-master(style='display: none; background-color: #FFB576;'): +FA('play-circle')
-		button#ExitBtn.for-master.for-normal.for-gaming(style='display: none; background-color: #FFADAD;'): +FA('times')
-		button#ReplayBtn.for-lobby(style='display: none; background-color: #D9FF82;'): +FA('video-camera')
-		button#LeaderboardBtn.for-lobby(style='display: none; background-color: #FFADD3;'): +FA('trophy')
+		button#SettingBtn.for-lobby.for-master.for-normal.for-gaming(style='display: none; background-color: #BEEFFF;')!= L('settings')
+		button#CommunityBtn.for-lobby.for-master.for-normal.for-gaming(style='display: none; background-color: #629FED;')!= L('community')
+		button#SpectateBtn.for-master.for-normal(style='display: none; background-color: #BEEFFF;'): +FA('eye')
+		button#SetRoomBtn.for-master(style='display: none; background-color: #629FED;'): +FA('magic')
+		button#NewRoomBtn.for-lobby(style='display: none; background-color: #BEEFFF;'): +FA('magic')
+		button#QuickRoomBtn.for-lobby(style='display: none; background-color: #629FED;'): +FA('bolt')
+		//- button#ShopBtn.for-lobby(style='display: none; background-color: #BEEFFF;'): +FA('shopping-bag')
+		button#DictionaryBtn.for-lobby.for-master.for-normal.for-gaming(style='display: none; background-color: #629FED;'): +FA('book')
+		//- button#WordPlusBtn.for-lobby.for-master.for-normal.for-gaming(style='display: none; background-color: #BEEFFF;')= L('wordPlus')
+		button#InviteBtn.for-master(style='display: none; background-color: #629FED;'): +FA('envelope')
+		button#ReadyBtn.for-normal(style='display: none; background-color: #BEEFFF;'): +FA('play')
+		button#StartBtn.for-master(style='display: none; background-color: #629FED;'): +FA('play-circle')
+		button#ExitBtn.for-master.for-normal.for-gaming(style='display: none; background-color: #BEEFFF;'): +FA('times')
+		button#ReplayBtn.for-lobby(style='display: none; background-color: #BEEFFF;'): +FA('video-camera')
 	+Dialog('SettingDiag', 300, 240, L('settingsText'))
 		div.dialog-bar
 			h4= L('mute')
@@ -369,6 +367,45 @@ block Middle
 					+GraphBar('jjo-round-time')
 			div.items
 			div.hints(style='display: none;')
+			div.tools(style='display: none;')
+				div(style="width: 100%")
+					div(style="float: left; width: 35%;")
+						span#themeis= L('themeis')
+					div(style="float: left; width: 65%;")
+						span#themeis-title
+				div(style="width: 100%")
+					div(style="float: left; width: 35%;")
+						span#drawing= L('wordis')
+					div(style="float: left; width: 65%;")
+						span#drawing-title
+				div(style="width: 100%")
+					label(for="drawing-line-width")= L('drawingLineWidth')
+					input#drawing-line-width(type="range", value="1", min="1", max="40")
+				.palette
+					div
+						button.button-color#color-red
+					div
+						button.button-color#color-orange
+					div
+						button.button-color#color-yellow
+					div
+						button.button-color#color-green
+					div
+						button.button-color#color-blue
+					div
+						button.button-color#color-indigo
+					div
+						button.button-color#color-violet
+					div
+						button.button-color#color-black
+					div
+						button.button-color#color-white
+				div(style="width: 100%")
+					div(style="float: left; width: 60%;")
+						label(for="drawing-color")= L('drawingColor')
+						input#drawing-color(type="color", value="#000000")
+					div(style="float: left; width: 40%;")
+						button#drawing-clear= L('drawingClear')
 			div.chain
 			div.rounds
 			div.history-holder
