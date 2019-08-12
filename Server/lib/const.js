@@ -1,4 +1,4 @@
-/**
+﻿/**
  * Rule the words! KKuTu Online
  * Copyright (C) 2017 JJoriping(op@jjo.kr)
  * 
@@ -28,7 +28,8 @@ exports.BLOCKED_LENGTH = 10000;
 exports.KICK_BY_SPAM = 9;
 exports.MAX_OBSERVER = 4;
 exports.TESTER = GLOBAL.ADMIN.concat([
-	"Input tester id here"
+	"naver-96346946",
+	"google-103339276222262423156"
 ]);
 exports.IS_SECURED = GLOBAL.IS_SECURED;
 exports.SSL_OPTIONS = GLOBAL.SSL_OPTIONS;
@@ -40,7 +41,15 @@ exports.OPTIONS = {
 	'prv': { name: "Proverb" },
 	'str': { name: "Strict" },
 	'k32': { name: "Sami" },
-	'no2': { name: "No2" }
+	'no2': { name: "No2" },
+	'rms': { name: "RandomMission" },
+	'nrt': { name: "NoReturn" },
+	'lvl': { name: "Level" },
+	'leg': { name: "Leng" },
+	'rtu': { name: "RandomTurn" },
+	'uwd': { name: "UnknownWord" },
+	'upl': { name: "UnknownPlayer" },
+	'rtn': { name: "Returns" }
 };
 exports.MOREMI_PART = [ 'back', 'eye', 'mouth', 'shoes', 'clothes', 'head', 'lhand', 'rhand', 'front' ];
 exports.CATEGORIES = [ "all", "spec", "skin", "badge", "head", "eye", "mouth", "clothes", "hs", "back" ];
@@ -72,7 +81,8 @@ exports.RULE = {
 */
 	'EKT': { lang: "en",
 		rule: "Classic",
-		opts: [ "man", "ext", "mis" ],
+		opts: [ "man", "ext", "mis",
+		"uwd", "rtn" ],
 		time: 1,
 		ai: true,
 		big: false,
@@ -80,7 +90,8 @@ exports.RULE = {
 	},
 	'ESH': { lang: "en",
 		rule: "Classic",
-		opts: [ "ext", "mis" ],
+		opts: [ "man", "ext", "mis",
+		"uwd", "rtn" ],
 		time: 1,
 		ai: true,
 		big: false,
@@ -88,7 +99,8 @@ exports.RULE = {
 	},
 	'KKT': { lang: "ko",
 		rule: "Classic",
-		opts: [ "man", "ext", "mis", "loa", "str", "k32" ],
+		opts: [ "man", "ext", "mis",
+		"uwd", "rtn", "rtu" ],
 		time: 1,
 		ai: true,
 		big: false,
@@ -96,7 +108,8 @@ exports.RULE = {
 	},
 	'KSH': { lang: "ko",
 		rule: "Classic",
-		opts: [ "man", "ext", "mis", "loa", "str" ],
+		opts: [ "man", "ext", "mis",
+		"uwd", "rtn", "rtu", ],
 		time: 1,
 		ai: true,
 		big: false,
@@ -104,7 +117,7 @@ exports.RULE = {
 	},
 	'CSQ': { lang: "ko",
 		rule: "Jaqwi",
-		opts: [ "ijp" ],
+		opts: [ "ijp", "lvl" ],
 		time: 1,
 		ai: true,
 		big: false,
@@ -112,7 +125,7 @@ exports.RULE = {
 	},
 	'KCW': { lang: "ko",
 		rule: "Crossword",
-		opts: [],
+		opts: [ "lvl" ],
 		time: 2,
 		ai: false,
 		big: true,
@@ -120,7 +133,7 @@ exports.RULE = {
 	},
 	'KTY': { lang: "ko",
 		rule: "Typing",
-		opts: [ "prv" ],
+		opts: [ "prv", "lvl" ],
 		time: 1,
 		ai: false,
 		big: false,
@@ -128,7 +141,7 @@ exports.RULE = {
 	},
 	'ETY': { lang: "en",
 		rule: "Typing",
-		opts: [ "prv" ],
+		opts: [ "prv", "lvl" ],
 		time: 1,
 		ai: false,
 		big: false,
@@ -136,7 +149,8 @@ exports.RULE = {
 	},
 	'KAP': { lang: "ko",
 		rule: "Classic",
-		opts: [ "man", "ext", "mis", "loa", "str" ],
+		opts: [ "man", "ext", "mis", "str",
+		"uwd", "rtn" ],
 		time: 1,
 		ai: true,
 		big: false,
@@ -145,7 +159,8 @@ exports.RULE = {
 	},
 	'HUN': { lang: "ko",
 		rule: "Hunmin",
-		opts: [ "ext", "mis", "loa", "str" ],
+		opts: [ "man", "ext", "mis", "str",
+		"uwd", "rtn" ],
 		time: 1,
 		ai: true,
 		big: false,
@@ -153,7 +168,7 @@ exports.RULE = {
 	},
 	'KDA': { lang: "ko",
 		rule: "Daneo",
-		opts: [ "ijp", "mis" ],
+		opts: [ "ijp", "mis", "rtu", ],
 		time: 1,
 		ai: true,
 		big: false,
@@ -161,7 +176,8 @@ exports.RULE = {
 	},
 	'EDA': { lang: "en",
 		rule: "Daneo",
-		opts: [ "ijp", "mis" ],
+		opts: [ "man", "ext", "mis",
+		"uwd", "rtn" ],
 		time: 1,
 		ai: true,
 		big: false,
@@ -169,7 +185,7 @@ exports.RULE = {
 	},
 	'KSS': { lang: "ko",
 		rule: "Sock",
-		opts: [ "no2" ],
+		opts: [ "no2", "lvl" ],
 		time: 1,
 		ai: false,
 		big: true,
@@ -177,11 +193,27 @@ exports.RULE = {
 	},
 	'ESS': { lang: "en",
 		rule: "Sock",
-		opts: [ "no2" ],
+		opts: [ "no2", "lvl" ],
 		time: 1,
 		ai: false,
 		big: true,
 		ewq: false
+	},
+	'KDG': { lang: "ko",
+		rule: "Drawing",
+		opts: [ "ijp", "lvl", "rtu" ],
+		time: 1,
+		ai: false,
+		big: true,
+		ewq: true
+	},
+	'EDG': { lang: "en",
+		rule: "Drawing",
+		opts: [ "ijp", "lvl", "rtu" ],
+		time: 1,
+		ai: false,
+		big: true,
+		ewq: true
 	}
 };
 exports.getPreScore = function(text, chain, tr){
@@ -195,7 +227,7 @@ exports.EXAMPLE_TITLE = {
 	'ko': "가나다라마바사아자차",
 	'en': "abcdefghij"
 };
-exports.INIT_SOUNDS = [ "ㄱ", "ㄲ", "ㄴ", "ㄷ", "ㄸ", "ㄹ", "ㅁ", "ㅂ", "ㅃ", "ㅅ", "ㅆ", "ㅇ", "ㅈ", "ㅉ", "ㅊ", "ㅋ", "ㅌ", "ㅍ", "ㅎ" ];
+exports.INIT_SOUNDS = [ "ㄱ", "ㄲ", "ㄴ", "ㄷ", "ㄸ", "ㄹ", "ㅁ", "ㅂ", "ㅃ", "ㅅ", "ㅆ", "ㅇ", "ㅈ", "ㅉ", "ㅊ", "ㅋ", "ㅌ", "ㅍ", "ㅎ", "○" ];
 exports.MISSION_ko = [ "가", "나", "다", "라", "마", "바", "사", "아", "자", "차", "카", "타", "파", "하" ];
 exports.MISSION_en = [ "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z" ];
 
