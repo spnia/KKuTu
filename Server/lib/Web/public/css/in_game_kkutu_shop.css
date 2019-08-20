@@ -47,6 +47,15 @@
 .x-gm .users-name::before{ content: "[GM]"; color: #2F77D9; text-shadow: 0px 0px 2px #2AF; }
 .chat-item>.x-gm::before{ content: "[GM]"; color: #2F77D9; text-shadow: 0px 0px 2px #2AF; }
 .room-user-title>.x-gm::before{ content: "[GM]"; color: #2F77D9; text-shadow: 0px 0px 2px #2AF; }
+.x-tw .users-name::before{ content: "[TW]"; color: #8B00FF; text-shadow: 0px 0px 2px #2AF; }
+.chat-item>.x-tw::before{ content: "[TW]"; color: #8B00FF; text-shadow: 0px 0px 2px #2AF; }
+.room-user-title>.x-tw::before{ content: "[TW]"; color: #8B00FF; text-shadow: 0px 0px 2px #DBBF41; }
+.x-vip .users-name::before{ content: "[VIP]"; color: #DBBF41; text-shadow: 0px 0px 2px #DBBF41; }
+.chat-item>.x-vip::before{ content: "[VIP]"; color: #DBBF41; text-shadow: 0px 0px 2px #DBBF41; }
+.room-user-title>.x-vip::before{ content: "[VIP]"; color: #DBBF41; text-shadow: 0px 0px 2px #DBBF41; }
+.x-gm1 .users-name::before{ content: "[GM]"; color: #2F77D9; text-shadow: 0px 0px 2px #2AF; }
+.chat-item>.x-gm1::before{ content: "[GM]"; color: #2F77D9; text-shadow: 0px 0px 2px #2AF; }
+.room-user-title>.x-gm1::before{ content: "[GM]"; color: #2F77D9; text-shadow: 0px 0px 2px #2AF; }
 
 .x-red_name{ color: #FF3333; }
 .x-orange_name{ color: #FFA533; }
@@ -55,3 +64,17 @@
 .x-indigo_name{ color: #1C18B9; }
 .x-purple_name{ color: #A939CC; }
 .x-pink_name{ color: #F15F9A; }
+.x-mint_name{ color: #3EB489; }
+.x-bluegreen_name{ color: #00887A; }
+.x-yellow_name{ color: #FFFF00; }
+.x-yellowgreen_name{ color: #badf66; }
+.x-rainbow_name{ background-image: url('/img/kkutu/shop/rn_b.gif'); color: #FFFFFF; border-radius: 5px; text-shadow: 0px 0px 2px #FFF; }
+.x-space_name{ background-image: url('/img/kkutu/shop/sn_b.gif'); color: #FFFFFF; border-radius: 5px; text-shadow: 0px 0px 2px #FFF; }
+.x-korea_name{ background-image: url('/img/kkutu/shop/kn_b.png'); color: #FFFFFF; border-radius: 5px; text-shadow: 0px 0px 1px #FFF; }
+.x-sp1_name{ background-image: url('/img/kkutu/shop/1sn_b.gif'); color: #000000; border-radius: 5px; text-shadow: 0px 0px 2px #000000; }
+.x-sp2_name{ background-image: url('/img/kkutu/shop/2sn_b.gif'); color: #FFFFFF; border-radius: 5px; text-shadow: 0px 0px 2px #FFF; }
+.x-star_name{ background-image: url('/img/kkutu/shop/stn_b.gif'); color: #FFFFFF; border-radius: 5px; text-shadow: 0px 0px 2px #FFF; }
+.x-tn1_name{ background-image: url('/img/kkutu/shop/1tn_b.gif'); color: #FFFFFF; border-radius: 5px; text-shadow: 0px 0px 2px #FFF; }
+.x-tn2_name{ background-image: url('/img/kkutu/shop/2tn_b.gif'); color: #FFFFFF; border-radius: 5px; text-shadow: 0px 0px 2px #FFF; }
+.x-tn3_name{ background-image: url('/img/kkutu/shop/3tn_b.gif'); color: #FFFFFF; border-radius: 5px; text-shadow: 0px 0px 2px #FFF; }
+.x-mine_name{ background-image: url('/img/kkutu/shop/mine_b.gif'); color: #FFFFFF; border-radius: 5px; text-shadow: 0px 0px 2px #FFF; }
