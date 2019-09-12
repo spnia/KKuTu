@@ -56,7 +56,7 @@ equ{
 }
 #Top{
 	background-color: #04B486;
-	background-image: none;
+            background-image: url('/img/kkutu/topbi.png');
 }
 #Top .menu-btn{
 	color: #111111;
@@ -109,10 +109,10 @@ iframe{
 .kkutu-menu button{
 	float: left;
 	border: none;
-	border-bottom-left-radius: 0px;
-	border-bottom-right-radius: 0px;
-	width: 98px;
-	height: 20px;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	width: 143px;
+	height: 15px;
 }
 	.kkutu-menu button:hover{
 		margin-top: -5px;
@@ -250,7 +250,7 @@ iframe{
 	.rooms-item{
 		padding: 5px;
 		border-radius: 10px;
-		margin: 0px;
+		margin: 2px;
 		width: 364px;
 		height: 64px;
 		box-shadow: 0px 1px 1px #777777;
@@ -330,6 +330,19 @@ iframe{
 		.team-2{ background-color: #FFBF30; }
 		.team-3{ background-color: #88C525; }
 		.team-4{ background-color: #4A90D6; }
+	}
+	.x-room_user{
+                        position: relative;
+		float: left;
+		padding: 3px;
+		border-radius: 10px;
+		margin: 3px;
+		width: 224px;
+		height: 151px;
+		box-shadow: 0px 1px 1px #777777;
+		background-color: #E4E4E4;
+                        background-image: url('/img/kkutu/shop/room_user.gif');
+	}
 	.room-user{
 		float: left;
 		padding: 3px;
