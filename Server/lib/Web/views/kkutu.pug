@@ -38,7 +38,7 @@ mixin SettingOption(id, text, st)
 		label(for=id)= text
 
 block Subject
-	title= L('title')
+	title= L('title3')
 
 block JS
 	script(type='text/javascript', src='/js/in_game_kkutu.min.js')
@@ -70,25 +70,27 @@ block Middle
 	- var VERSION = L('version');
 	- var nick = SESSION.profile ? (SESSION.profile.title || SESSION.profile.name) : null;
 	div#Intro
-		img#intro(src='/img/kkutu/intro.png')
+		img#intro(src='/img/kkutu/intro_2020.gif')
 		// img#intro-start(src='/img/kkutu/intro_start.gif')
 		div#version= VERSION
 		div#intro-text= L('LOADING')
 	div.kkutu-menu
-		button#SettingBtn.tiny-menu.for-lobby.for-master.for-normal.for-gaming(style='display: none; background-color: #BEEFFF;')!= L('settings')
-		button#CommunityBtn.tiny-menu.for-lobby.for-master.for-normal.for-gaming(style='display: none; background-color: #629FED;')!= L('community')
-		button#SpectateBtn.for-master.for-normal(style='display: none; background-color: #BEEFFF;')= L('spectate')
-		button#SetRoomBtn.for-master(style='display: none; background-color: #629FED;')= L('setRoom')
-		button#NewRoomBtn.for-lobby(style='display: none; background-color: #BEEFFF;')= L('newRoom')
-		button#QuickRoomBtn.for-lobby(style='display: none; background-color: #629FED;')= L('quickRoom')
-		button#ShopBtn.for-lobby(style='display: none; background-color: #BEEFFF;')= L('shop')
-		button#DictionaryBtn.for-lobby.for-master.for-normal.for-gaming(style='display: none; background-color: #629FED;')= L('dict')
-		// button#WordPlusBtn.for-lobby.for-master.for-normal.for-gaming(style='display: none; background-color: #BEEFFF;')= L('wordPlus')
-		button#InviteBtn.for-master(style='display: none; background-color: #629FED;')= L('invite')
-		button#ReadyBtn.for-normal(style='display: none; background-color: #BEEFFF;')= L('ready')
-		button#StartBtn.for-master(style='display: none; background-color: #629FED;')= L('start')
-		button#ExitBtn.for-master.for-normal.for-gaming(style='display: none; background-color: #BEEFFF;')= L('exit')
-		button#ReplayBtn.for-lobby(style='display: none; background-color: #BEEFFF;;')= L('replay')
+		button#HelpBtn.tiny-menu.for-lobby.for-master.for-normal.for-gaming(style='display: none; background-color: #9C9DA0;')!= L('help')
+		button#SettingBtn.tiny-menu.for-lobby.for-master.for-normal.for-gaming(style='display: none; background-color: #3F4A81;')!= L('settings')
+		button#CommunityBtn.tiny-menu.for-lobby.for-master.for-normal.for-gaming(style='display: none; background-color: #9C9DA0;')!= L('community')
+		button#SpectateBtn.for-master.for-normal(style='display: none; background-color: #3F4A81;')= L('spectate')
+		button#SetRoomBtn.for-master(style='display: none; background-color: #9C9DA0;')= L('setRoom')
+		button#NewRoomBtn.for-lobby(style='display: none; background-color: #3F4A81;')= L('newRoom')
+		button#QuickRoomBtn.for-lobby(style='display: none; background-color: #9C9DA0;')= L('quickRoom')
+		button#ShopBtn.for-lobby(style='display: none; background-color: #3F4A81;')= L('shop')
+		button#DictionaryBtn.for-lobby.for-master.for-normal.for-gaming(style='display: none; background-color: #9C9DA0;')= L('dict')
+		// button#WordPlusBtn.for-lobby.for-master.for-normal.for-gaming(style='display: none; background-color: #3F4A81;')= L('wordPlus')
+		button#InviteBtn.for-master(style='display: none; background-color: #9C9DA0;')= L('invite')
+		button#ReadyBtn.for-normal(style='display: none; background-color: #3F4A81;')= L('ready')
+		button#StartBtn.for-master(style='display: none; background-color: #9C9DA0;')= L('start')
+		button#ExitBtn.for-master.for-normal.for-gaming(style='display: none; background-color: #3F4A81;')= L('exit')
+		button#ReplayBtn.for-lobby(style='display: none; background-color: #3F4A81;')= L('replay')
+		button#LeaderboardBtn.for-lobby(style='display: none; background-color: #9C9DA0;')!= L('leaderboard')
 		div#facebook-menu.fb-like.for-lobby.for-master.for-normal.for-gaming(data-href='http://kkutu.kr', data-width='300', data-layout='button_count', data-action='like', data-show-faces='true', data-share='true')
 	+Dialog('SettingDiag', 300, 240, L('settingsText'))
 		div.dialog-bar
@@ -353,6 +355,9 @@ block Middle
 		div.dialog-bar
 			h4(style='width: 150px;')= L('myExordial')
 			input#dress-exordial(type='textfield', placeholder=L('myExordialX'), style='width: 435px;', maxlength=100)
+		div.dialog-bar
+			h4(style='width: 150px;')= L('myNickname')
+			input#dress-nick(type='textfield', placeholder=L('myNicknameX'), style='width: 435px;', maxlength=100)
 		div.dialog-bar(style='width: 150px;')
 			div.moremi#dress-view(style='float: left; width: 150px; height: 150px;')
 			h4(style='width: 100%; font-weight: bold;')= L('myMoremi')
