@@ -1,0 +1,89 @@
+﻿<!DOCTYPE HTML>
+<html lang="ko=KR">
+
+	<head>
+		
+        <meta charset="UTF-8">
+        
+		<style>
+			
+			* { padding: 0px; margin: 0px; }
+			
+			#stage { border: 0px;
+					 background-color:none;
+					 width: 160px;}
+			
+			#YMD  { border: 0px;
+					text-align:center; color:black;
+					font-family: 나눔바른고딕, 나눔바른고딕, 나눔바른고딕;}
+			
+			#hms  { border: 0px;
+					text-align:center; color:black;
+					font-weight: bold;
+                                                            font-family: 나눔바른고딕, 나눔바른고딕, 나눔바른고딕;
+                                                            font-size: 20px;
+                                                            color: #FFFFFF;}
+			
+        </style>
+        
+        <script>
+			
+			function clock(){
+				
+				var month = new Array ("Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec");
+				var day = new Array ("Mon","Tus","Wed","Thu","Fri","Sat","Sun");
+				var ampm = new Array ("오전","오후");
+				var isam = 0;
+				var th = "th";
+				if(D==1){
+					th = "st";
+				}else if(D==2){
+					th = "nd";
+				}else if(D==3){
+					th = "rd";
+				}else{
+					th = "th";
+				}
+				var date = new Date();
+				
+				var M = date.getMonth();
+				var D = date.getDate();
+				var d = date.getDay();
+				
+				//document.getElementById("YMD").innerHTML = day[d] + " " + month[M] + " " + D + th;
+				
+				var h = date.getHours();
+				var m = date.getMinutes();
+				var s = date.getSeconds();
+				if(h>12||h==0){
+					h = h%12;
+					isam = 1;
+				}
+				
+				h=(h>10)?h:"0"+h;
+				m=(m>10)?m:"0"+m;
+				s=(s>10)?s:"0"+s;
+				
+				document.getElementById("hms").innerHTML = h + ":" + m + ":" + s + " " + ampm[isam];
+			
+			}
+			
+			var timer = setInterval( function(){ clock(); }, 1000);
+		
+        </script>
+        
+		<title>CLOCK</title>
+	
+    </head>
+
+	<body>
+    
+		<div id="stage">
+    		
+    		<div id="hms"></div>
+		
+        </div>
+	
+    </body>
+
+</html>
