@@ -125,7 +125,7 @@ span{
 }
 	.autocomp-item{ margin: 1px 0px; }
 	.autocomp-item:hover, .autocomp-select{ color: #FFFFFF; background-color: rgba(50, 50, 50, 0.8); }
-#account{ float: right; margin: 1px; font-size: 11px; color: #444444; }
+#account{ position: relative; float: right; margin: 1px; font-size: 14px; color: #FFFFFF; text-shadow: 0px 0px 5px #000; left: -100px; top: 5px; z-index: 4; }
 #account-setting{
 	float: left;
 	padding-top: 8px;
@@ -139,17 +139,19 @@ span{
 	text-align: center;
 	cursor: pointer;
 	transition: color 300ms ease;
+            z-index: 4; 
 }
 #account-info:hover{ color: #EEEEEE; }
 #global-notice{
+	position: relative;
 	padding: 3px 0px;
-	margin-top: 30px;
 	color: #111111;
 	text-align: center;
 	font-weight: bold;
 	background-color: #EEBB33;
 	cursor: pointer;
 	z-index: 5;
+            top: 10px;
 }
 .searching{
 	color: #EEEEEE;
@@ -265,14 +267,6 @@ span{
 .auto-item:hover{ background-color: #333333; }
 .auto-selected{ color: #EEEE44; background-color: #3B3B3B; }
 
-#Top{
-	position: fixed;
-	width: 100%;
-	height: 30px;
-	box-shadow: 0px 2px 2px #111111;
-	background-image: url('/img/topbg.png');
-	z-index: 5;
-}
 #Middle{
 	float: left;
 	margin-top: 50px;
@@ -284,15 +278,18 @@ span{
 	color: #444444;
 	font-size: 11px;
 	text-align: center;
+            z-index: 2;
 }
 .bottom-legal{
 	margin-top: 10px;
 	color: #CCCCCC;
+            z-index: 2;
 }
 	.bottom-legal a{ padding: 0px 5px; }
 .bottom-contact{
 	color: #777777;
 	font-weight: bold;
+            z-index: 2;
 }
 
 /* 설명 */

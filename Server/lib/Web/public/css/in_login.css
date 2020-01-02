@@ -17,25 +17,33 @@
  */
 
 body{
-	background-color: #232323;
+	background-color: #FFFFFF;
 }
 button{
+            position: relative;
 	border: none;
 	margin: 8px auto;
-	width: 200px;
-	height: 30px;
+	width: 330px;
+	height: 50px;
 	cursor: pointer;
-	box-shadow: 0px 2px 2px #141414;
+	box-shadow: 0px 1px 1px #141414;
+            font-size: 30px;
+	text-align: right;
+            background-image: url('/img/kkutu/googlelogin.png');
 }
 #with-google span{ display: block; }
 .login-with{
+            position: relative;
 	padding-top: 30px;
+            top: -10px;
 	margin: 30px 0px;
 	text-align: center;
+            color: #000000;
+            background-image: url('/img/kkutu/logel.png');
 }
 .login-legal{
 	padding-top: 50px;
-	color: #BBBBBB;
+	color: #000000;
 	font-size: 11px;
 	text-align: center;
 }

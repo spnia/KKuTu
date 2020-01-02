@@ -56,7 +56,7 @@ equ{
 }
 #Top{
 	background-color: #7CC4F8;
-	background-image: none;
+            background-image: url('/img/kkutu/topbi.png');
 }
 #Top .menu-btn{
 	color: #111111;
@@ -324,6 +324,17 @@ iframe{
 		box-shadow: 0px 1px 1px #777777;
 		background-color: #E4E4E4;
 	}
+	.x-room_user{
+		float: left;
+		padding: 3px;
+		border-radius: 10px;
+		margin: 3px;
+		width: 224px;
+		height: 151px;
+		box-shadow: 0px 1px 1px #777777;
+		background-color: #E4E4E4;
+                        background-image: url('/img/kkutu/shop/room_user.gif');
+	}
 		.room-user div{ float: left; }
 		.room-user-image{ margin: 3px; width: 100px; height: 100px; }
 		.room-user-stat{ padding: 3px; width: 112px; height: 100px; font-size: 15px; }
@@ -434,18 +445,7 @@ iframe{
 			background-color: #DEAF56;
 		}
 		.cw .jjoDisplayBar{ width: 308px; height: 330px; transition: all 0.5s ease; }
-			.jjo-display{
-				padding: 8px 5px;
-				border-radius: 10px;
-				border-bottom-left-radius: 0px;
-				border-bottom-right-radius: 0px;
-				width: 476px;
-				height: 23px;
-				font-size: 20px;
-				text-align: center;
-				color: #EEEEEE;
-				background-color: rgba(0, 0, 0, 0.7);
-			}
+			
 			.jjo-display-word-length{ color: orange; font-size: 14px; }
 			.cw .jjo-display{ position: relative; padding: 5px; width: 298px; height: 298px; }
 				.display-text{ width: 20px; text-align: center; z-index: 1; }

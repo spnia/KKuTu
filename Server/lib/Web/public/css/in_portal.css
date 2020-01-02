@@ -24,18 +24,86 @@
 }
 #logo{
             position: relative;
-            left: -10px;
+            left: -113px;
+            top: 80px;
 	margin-top: -20px;
+            z-index: 3;
 }
 .baener-top{
             position: relative;
             left: -10px;
 	margin-top: -20px;
 }
+#menu-bar2 a{
+	display: block;
+            position: relative;
+	float: left;
+	padding: 10px 5px;
+	margin: 0px 0px;
+            top: -40px;
+            left: -688px;
+	width: 310px;
+	height: 10px;
+	font-size: 15px;
+	text-align: center;
+}
+#mebox a{
+	display: block;
+            position: relative;
+	float: left;
+	padding: 10px 5px;
+	margin: 0px 0px;
+            top: -113px;
+            left: -178px;
+	border: 4px;
+            z-index: 2;
+	width: 271px;
+	height: 70px;     
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+}
+#menubbb111 a{
+	display: block;
+            position: relative;
+	float: left;
+	padding: 10px 5px;
+	margin: 0px 0px;
+            top: -30px;
+            left: -474px;
+	width: 298px;
+	height: 910px;
+	border: 2px solid #000000;
+            z-index: 2;    
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;             
+}
+#menubbb112 a{
+	display: block;
+	float: left;
+            position: relative;
+	margin: 0px 0px;
+	width: 325px;
+	height: 50px;
+	font-size: 13px;
+	cursor: pointer;
+	background-color: rgba(0, 0, 0, 0.6);
+            z-index: 4;
+            top: -980px;
+            left: -80px;         
+}
 #kkutu-bulletin{
             position: relative;
+            left: 0px;
+            top: -1000px;
+	border: 0px;
+	margin-bottom: 0px;
+            width: 278px;
+            height: 280px;
+}
+#kkutu_noticemain{
+            position: relative;
             left: 30px;
-            top: -150px;
+            top: 10px;
 	border: 0px;
 	margin-bottom: 0px;
 }
@@ -46,16 +114,39 @@
 	float: left;
 	padding: 10px 5px;
 	margin: 0px 0px;
-            top: 507px;
-            left: -684px;
+            top: 505px;
+            left: -810px;
+	width: 130px;
+	font-size: 15px;
+	text-align: center;
+            z-index: 4;
+}
+#menu-bar1 a{
+	display: block;
+            position: relative;
+	float: left;
+	padding: 10px 5px;
+	margin: 0px 0px;
+            top: 545px;
+            left: -369px;
 	width: 153px;
 	font-size: 15px;
 	text-align: center;
 }
 
+.server-list-box{
+            position: relative;
+            top: 110px;
+            left: -505px;
+	float: light;
+	width: 325px;
+	background-color: rgba(0, 0, 0, 0.6);
+}
+
 #game-start{
             position: relative;
             top: -10px;
+            left: -80px;
 	float: left;
 	width: 315px;
 	height: 70px;
@@ -64,47 +155,53 @@
 	border: none;
 }
 	#game-start:hover{ font-size: 24px; background-color: rgba(0, 0, 0, 0.5); }
-.server-list-box{
-            position: relative;
-            top: 110px;
-            left: -505px;
-	float: light;
-	width: 325px;
-	background-color: rgba(0, 0, 0, 0.4);
-}
 .server-list-title{
 	padding: 2px 0px;
-	width: 325px;
-	background-color: rgba(0, 0, 0, 0.4);
+	width: 280px;
+            top: -849px;
+            position: relative;
+            left: -80px;
+	background-color: rgba(0, 0, 0, 0.6);
+            z-index: 6;
 }
 #server-refresh{
+            position: relative;
 	margin: 0px 5px;
 	cursor: pointer;
+	width: 325px;
+            top: -845px;
+            left: -80px;
+            z-index: 6;
 }
 .server{
 	float: left;
+            position: relative;
 	margin: 0px 0px;
-	width: 325px;
+	width: 280px;
 	height: 50px;
 	font-size: 13px;
 	cursor: pointer;
-	background-color: rgba(0, 0, 0, 0.4);
+	background-color: rgba(0, 0, 0, 0.6);
+            z-index: 6;
+            top: -849px;
+            left: -80px;
 }
-	.server>div{ float: left; }
-	.server-status{  position: relative; left: 255px; margin: 2px; width: 7px; height: 45px; }
+	.server>div{ float: left; z-index: 8; }
+	.server-status{  position: relative; left: 215px; margin: 2px; width: 7px; height: 45px; z-index: 8; }
 		.ss-o{ background-color: #3E3; }
 		.ss-p{ background-color: #EE3; }
 		.ss-q{ background-color: #F55; }
 		.ss-x{ background-color: #777; }
-	.server-name{ position: relative; left: 93px; margin: 2px; width: 60px; font-size: 25px; }
-	.server-people{ position: relative; left: -70px; top: 4.5px; width: 245px; height: 80%; }
+	.server-name{ position: relative; left: 71px; margin: 2px; width: 60px; font-size: 25px; }
+	.server-people{ position: relative; left: -70px; top: 4.5px; width: 205px; height: 80%; }
 		.server-people>.graph-bar{ background-image: url(/img/blue_gauge.png); }
-		.server-people>label{ position: relative; display: block; top: -14px; width: 100%; text-align: center; font-size: 11px; }
-            .server-enter{ position: relative; left: 253px; top: -40px; margin: 3px 5px; width: 50px; text-align: center; font-size: 20px; }
+		.server-people>label{ position: relative; display: block; top: -14px; width: 100%; text-align: center; font-size: 11px; z-index: 8; }
+            .server-enter{ position: relative; left: 213px; top: -40px; margin: 3px 5px; width: 50px; text-align: center; font-size: 20px; z-index: 8; }
 	.server:hover{ background-color: rgba(255, 255, 255, 0.1); }
 
 #Background{
-	animation: BGScroll 4s linear infinite;
+            z-index: 2;
+
 }
 @keyframes BGScroll{
 	from{ background-position: 0px 0px; }
