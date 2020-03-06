@@ -1,6 +1,6 @@
 ﻿{
 	"GLOBAL": {
-		"GPL": "<div style='color: #666;'> BGM:4시, A hisa 원본 소스:쪼리핑, Affero GPL 적용, 글자로 놀자! 휴투 온라인 Copyright (C) 2019 휴산(twhyusan@tensi.org)<br>이 프로그램은 제품에 대한 어떠한 형태의 보증도 제공되지 않습니다.<br>이 프로그램은 자유 소프트웨어이며 배포 규정을 만족시키는 조건 아래 자유롭게 재배포할 수 있습니다.<br>이에 대한 자세한 사항은 본 프로그램의 구현을 담은 다음 레포지토리에서 확인하십시오: <a target='_blank' href='https://github.com/spnia/KKuTu'>https://github.com/spnia/KKuTu</a></div>",
+		"GPL": "<div style='color: #666;'>글자로 놀자! 끄투 온라인 Copyright (C) 2019 휴산(twhyusan@tensi.org)<br>이 프로그램은 제품에 대한 어떠한 형태의 보증도 제공되지 않습니다.<br>이 프로그램은 자유 소프트웨어이며 배포 규정을 만족시키는 조건 아래 자유롭게 재배포할 수 있습니다.<br>이에 대한 자세한 사항은 본 프로그램의 구현을 담은 다음 레포지토리에서 확인하십시오: <a target='_blank' href='https://github.com/spnia/KKuTu'>https://github.com/spnia/KKuTu</a></div>",
 
 		"CREATOR":	"트위터",
 		"HOME":		"FA{home}",
@@ -145,8 +145,8 @@
 		"500_e": "예기치 못한 원인으로 내부 서버가 작동을 중지했습니다."
 	},
 	"login": {
-		"title": "휴산끄투에 로그인",
-		"titlelogin": "휴산끄투에 로그인합니다.",
+		"title": "끄투플러스에 로그인",
+		"titlelogin": "끄투플러스에 로그인합니다.",
 		"loginWith": " ",
 		"withNaver": "네이버 아이디로 로그인",
 		"withFacebook": "페이스북 아이디로 로그인",
@@ -170,7 +170,7 @@
 		"withTwitch": "트위치 아이디로 로그인",
 		"withWindowslive": "윈도우 아이디로 로그인",
 		"login_kkutu": "글자로 놀자! 휴투 온라인을 이용하시려면 로그인을 해 주세요.",
-		"loginLegal": "휴산 끄투에 로그인합니다."
+		"loginLegal": "끄투플러스에 로그인합니다."
 	},
 	"loginfail": {
 		"title": "로그인 실패",
@@ -178,9 +178,9 @@
 		"login": "로그인"
 	},
 	"kkutu": {
-		"title": "휴산끄투-글자로 재미있게 놀아보자!",
-		"title2": "휴산끄투 - 글자로 놀아보자!",
-		"title3": "휴산끄투에 오신것을 환영합니다!",
+		"title": "끄투플러스 - 글자로 재미있게 놀아보자!",
+		"title2": "끄투플러스 - 글자로 놀아보자!",
+		"title3": "끄투플러스 - 심심한 단어의 공간",
 		"version": "test",
 		
 		"meta_desc": "온라인 끝말잇기, 앞말잇기, 자음퀴즈, 십자말풀이, 타자 대결까지! 끄투에서 어휘력의 제왕이 되어 보세요.",
@@ -220,9 +220,9 @@
 		"adbox1":  " ",
 		"adbox2":  " ",
 		"etcSupport": ",",
-		"welcome": "접속 완료, Welcome 2020.",
+		"welcome": "끄투플러스에 오신것을 환영합니다.",
 		"welcomeTestServer": "테스트 서버에 접속했습니다. 본 서버는 특별한 공지 없이 폭발하거나 닫힐 수 있습니다.",
-		"loadRemain": "휴산끄투에 접속 중 입니다... 다음과 같이 남았습니다. ",
+		"loadRemain": "끄투플러스에 접속 중 입니다... 다음과 같이 남았습니다. ",
 		"closed": "서버와의 연결이 종료되었습니다.",
 		"error": "연결 중 문제가 발생했습니다!",
 		"error_full": "서버 제한 인원을 초과했습니다... 잠시 후 접속해 주세요!!!",
@@ -661,7 +661,7 @@
 		"roomNumber": "번 방",
 		"lobby": "로비",
 		"recordScore": "총 경험치",
-		"sProfile": "님의 정보",
+		"sProfile": "님의 프로필",
 		"sRoomInfo": "번 방의 정보",
 		"kickVote": "강퇴 투표",
 		"kickVoteNotice": "시간 안에 응답하지 않을 경우 찬성으로 간주합니다.",
@@ -777,8 +777,8 @@
 		"wordPlus": "단어 추가",
 		"chatLog": "대화 기록",
 		"notice": "알림",
-		"yell": "[공지]",
-		"info": "[정보]",
+		"yell": "[공지사항]",
+		"info": "[알림]",
 		"dying": "현재 접속하신 채널에 문제가 발생하여 10초 후 접속이 종료됩니다. 이용에 불편을 드려 대단히 죄송합니다.",
 		"blocked": "과도한 메시지 전송으로 관련 기능을 잠시 이용할 수 없습니다.",
 		"wblocked": "님의 귓속말을 무시합니다.",
@@ -796,7 +796,7 @@
 		"pingCost": "가격",
 		"pingAfter": "이후 핑",
 		"moremiAfter": "착용 모습",
-		"alreadyGot": "<b style='color: red;'>이미 보유한 상품인 것 같습니다.</b>",
+		"alreadyGot": "<b style='color: red;'>이미 보유한 상품입니다.</b>",
 		"surePurchase": "이 항목을 구매합니까?",
 		"notEnoughMoney": "핑이 부족합니다.",
 		"purchased": "성공적으로 구매했습니다. 구매한 상품은 화면 왼쪽 아래의 [내 정보] > [프로필 관리] 단추를 눌러 확인할 수 있습니다.",
@@ -826,7 +826,7 @@
 		"aiLevel4": "사기",
 		"team": "팀",
 		
-		"searching": "검색 중",
+		"searching": "검색 중입니다, 잠시만 기다려주세요.",
 		"injeongReq": "추가 요청",
 		"wpDesc1": "추가되기를 희망하는 단어를 입력하세요.",
 		"wpDesc2": "단어가 추가되면 경험치 보상을 획득합니다!",
@@ -838,7 +838,7 @@
 		"wpFail_401": "실패 - 단어가 명사여야 합니다.",
 		"wpFail_402": "실패 - 로그인이 필요합니다.",
 		"wpFail_403": "실패 - 이미 신청된 단어입니다.",
-		"wpFail_404": "유효하지 않은 단어입니다.",
+		"wpFail_404": "해당 단어는 존재하지 않습니다.",
 		"wpFail_405": "실패 - 위키에 없는 단어입니다.",
 		"wpFail_406": "실패 - 신청 기준에 맞지 않는 단어입니다.",
 		"wpFail_409": "실패 - 이미 등록된 단어입니다.",
