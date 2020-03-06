@@ -1,0 +1,65 @@
+//-
+	Rule the words! KKuTu Online
+	Copyright (C) 2017 JJoriping(op@jjo.kr)
+
+	This program is free software: you can redistribute it and/or modify
+	it under the terms of the GNU General Public License as published by
+	the Free Software Foundation, either version 3 of the License, or
+	(at your option) any later version.
+
+	This program is distributed in the hope that it will be useful,
+	but WITHOUT ANY WARRANTY; without even the implied warranty of
+	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+	GNU General Public License for more details.
+
+	You should have received a copy of the GNU General Public License
+	along with this program. If not, see <http://www.gnu.org/licenses/>.
+extends layout
+block Subject
+	title= L('title')
+
+block CSS
+	link(rel='stylesheet', href='/css/in_game_kkutu.css')
+
+block Middle
+	+separator(5)
+	div(style='float: left; width: 100%;')
+		div(style='float: left; padding-left: 70px;')
+			img#logo(src='/img/kkutu/short_logo.png')
+		div#menu-bar(style='float: right; margin-top: 25px;')
+			a(target='_blank', href='//www.youtube.com/channel/UCzFpF9wIfCXFclSND8kDj0w', style='background-color: #FF0000;')= L('sandbox')
+			a(target='_blank', href='//twitter.com/TWHyusan', style='background-color: #00A5FF;')= L('CREATOR')
+		div#menu-bar1(style='float: right; margin-top: 25px;')
+			a(target='_blank', href='//hyutu.ml/hyutu_qna.html', style='background-color: #008000;')= L('qna')
+			a(target='_blank', href='//hyutu.ml/hyutu_privacy.html', style='background-color: #8B00FF;')= L('pri')
+		div#menu-bar2(style='float: right; margin-top: 25px;')
+			a(target='_blank', href='//hyutu.ml/event.html', style='background-color: #ffffff;')= L('event')
+		div#menubbb111(style='float: right; margin-top: 25px; z-index: 1;')
+			a(style='background-color: #DEAF56;')
+		div#menubbb112(style='float: right; margin-top: 25px; z-index: 2;')
+			a(style='background-color: #444444;')
+		div#mebox(style='float: right; margin-top: 25px; z-index: 2;')
+			a(style='background-color: #44444499;')
+		div.jjoriping(style='margin-top: 40px;')
+			img.jjoObj.jjoEyeL(src='/img/jjoeyeL.png', style='left: -366px; top: -35px; z-index: 3;')
+			img.jjoObj.jjoNose(src='/img/jjonose.png', style='left: -280px; top: -39px; z-index: 3;')
+			img.jjoObj.jjoEyeR(src='/img/jjoeyeR.png', style='left: 158px; top: -133px; z-index: 3;')
+	div(style='float: right; margin-top: -120px; width: 50%; z-index: 3;')
+		div.server-list-box
+			h3.server-list-title
+				a#server-refresh
+					+FA('refresh')
+					+Expl(L('serverRefresh'))
+				label= L('serverList')
+				label#server-total(style='color: #AAA; font-size: 13px; z-index: 4;')
+			div#server-list
+	div(style='position: relative; margin: 20px; top: 555px; height: 300px; left: -100px; width: 280px; border: 0px solid #CCC; background-color: #44444499; z-index: 4;')
+		iframe#kkutu-bulletin(width='90%', height='100px', src='/kkutu_bulletin.html')
+	div(style='position: relative; top: -490px; left: 0px; width: calc(32.6% - 4px); border-radius: 5px solid #CCC; margin-top: 20px; background-color: #44444494;')
+		iframe#kkutu_noticemain(width='90%', height='330px', src='/kkutu_noticemain.html')
+	+separator(5)
+
+
+block Bottom
+	div.bottom-legal!= L('dictionarySupport')
+	div.bottom-legal!= L('etcSupport')

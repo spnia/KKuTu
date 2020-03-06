@@ -1,0 +1,60 @@
+//-
+	Rule the words! KKuTu Online
+	Copyright (C) 2017 JJoriping(op@jjo.kr)
+
+	This program is free software: you can redistribute it and/or modify
+	it under the terms of the GNU General Public License as published by
+	the Free Software Foundation, either version 3 of the License, or
+	(at your option) any later version.
+
+	This program is distributed in the hope that it will be useful,
+	but WITHOUT ANY WARRANTY; without even the implied warranty of
+	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+	GNU General Public License for more details.
+
+	You should have received a copy of the GNU General Public License
+	along with this program. If not, see <http://www.gnu.org/licenses/>.
+extends m_layout
+
+block Subject
+	title= L('title')
+
+block CSS
+	link(rel='stylesheet', href='/css/in_game_kkutu.css')
+	link(rel='stylesheet', href='/css/in_m_portal.css')
+
+block JS
+	script(type='text/javascript', src='/js/in_portal.min.js')
+	if PUBLIC && false
+		script(async, src='//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js')
+		script (adsbygoogle = window.adsbygoogle || []).push({google_ad_client: "ca-pub-3784210391085906", enable_page_level_ads: true});
+
+block Middle
+	+separator(5)
+	div(style='float: left; width: 100%;')
+		div(style='position: relative; left: 45px; float: left; padding-left: 70px;')
+			img#logo(src='/img/kkutu/short_logo.png')
+		div#menu-bar(style='float: right; margin-top: 25px;')
+			a(target='_blank', href='//www.youtube.com/channel/UCzFpF9wIfCXFclSND8kDj0w', style='background-color: #FF0000;')= L('sandbox')
+			a(target='_blank', href='//twitter.com/TWHyusan', style='background-color: #00A5FF;')= L('CREATOR')
+		div.jjoriping
+	div(style='position: relative; left: 43px; float: left; width: 100%;')
+				button#game-start.jjo-display= L('gameStart')
+	div(style='position: relative; left: 342px; float: right; margin-top: -120px; width: 50%; height: -10px;')
+		div.server-list-box
+			h3.server-list-title
+				a#server-refresh
+					+FA('refresh')
+					+Expl(L('serverRefresh'))
+				label= L('serverList')
+				label#server-total(style='color: #AAA; font-size: 13px;')
+			div#server-list
+	div(style='position: relative; border-radius: 6px; margin: 20px; top: 293px; left: 100px; width: calc(57% - 4px); border: 0px solid #CCC; background-color: #44444494;')
+		iframe#kkutu-bulletin(width='90%', height='650px', src='/kkutu_bulletin.html')
+	div(style='position: relative; top: -530px; left: 50px; width: calc(32.6% - 4px); border-radius: 5px solid #CCC; margin-top: 20px; background-color: #44444494;')
+		iframe#kkutu_noticemain(width='90%', height='330px', src='/kkutu_noticemain.html')
+	+separator(5)
+
+block Bottom
+	div.bottom-legal!= L('dictionarySupport')
+	div.bottom-legal!= L('etcSupport')
