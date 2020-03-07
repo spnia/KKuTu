@@ -113,19 +113,19 @@
 .x-bluegreen_name{ color: #00887A; }
 .x-yellow_name{ color: #FFFF00; }
 .x-yellowgreen_name{ color: #badf66; }
-.x-rainbow_name{ background-image: url('/img/kkutu/shop/rn_b.gif'); color: #FFFFFF; border-radius: 5px; text-shadow: 0px 0px 2px #FFF; }
-.x-space_name{ background-image: url('/img/kkutu/shop/sn_b.gif'); color: #FFFFFF; border-radius: 5px; text-shadow: 0px 0px 2px #FFF; }
-.x-korea_name{ background-image: url('/img/kkutu/shop/kn_b.png'); color: #FFFFFF; border-radius: 5px; text-shadow: 0px 0px 1px #FFF; }
-.x-sp1_name{ background-image: url('/img/kkutu/shop/1sn_b.gif'); color: #000000; border-radius: 5px; text-shadow: 0px 0px 2px #000000; }
-.x-sp2_name{ background-image: url('/img/kkutu/shop/2sn_b.gif'); color: #FFFFFF; border-radius: 5px; text-shadow: 0px 0px 2px #FFF; }
-.x-star_name{ background-image: url('/img/kkutu/shop/stn_b.gif'); color: #FFFFFF; border-radius: 5px; text-shadow: 0px 0px 2px #FFF; }
-.x-tn1_name{ background-image: url('/img/kkutu/shop/1tn_b.gif'); color: #FFFFFF; border-radius: 5px; text-shadow: 0px 0px 2px #FFF; }
-.x-tn2_name{ background-image: url('/img/kkutu/shop/2tn_b.gif'); color: #FFFFFF; border-radius: 5px; text-shadow: 0px 0px 2px #FFF; }
-.x-tn3_name{ background-image: url('/img/kkutu/shop/3tn_b.gif'); color: #FFFFFF; border-radius: 5px; text-shadow: 0px 0px 2px #FFF; }
-.x-mine_name{ background-image: url('/img/kkutu/shop/mine_b.gif'); color: #FFFFFF; border-radius: 5px; text-shadow: 0px 0px 2px #FFF; }
-.x-sky_name{ background-image: url('/img/bg/sky.gif'); color: #000000; border-radius: 5px; text-shadow: 0px 0px 2px #000; }
-.x-hyutu_name{ background-image: url('/img/kkutu/shop/hyutu.gif'); color: #FFFFFF; border-radius: 5px; text-shadow: 0px 0px 2px #FFF; }
-.x-hyutu2_name{ background-image: url('/img/kkutu/shop/hyutu2.gif'); color: #FFFFFF; border-radius: 5px; text-shadow: 0px 0px 2px #FFF; }
+.x-rainbow_name{ background-image: url('/img/kkutu/shop/rn_b.gif'); color: #FFFFFF; border-radius: 3px; text-shadow: 0px 0px 2px #FFF; }
+.x-space_name{ background-image: url('/img/kkutu/shop/sn_b.gif'); color: #FFFFFF; border-radius: 3px; text-shadow: 0px 0px 2px #FFF; }
+.x-korea_name{ background-image: url('/img/kkutu/shop/kn_b.png'); color: #FFFFFF; border-radius: 3px; text-shadow: 0px 0px 1px #FFF; }
+.x-sp1_name{ background-image: url('/img/kkutu/shop/1sn_b.gif'); color: #000000; border-radius: 3px; text-shadow: 0px 0px 2px #000000; }
+.x-sp2_name{ background-image: url('/img/kkutu/shop/2sn_b.gif'); color: #FFFFFF; border-radius: 3px; text-shadow: 0px 0px 2px #FFF; }
+.x-star_name{ background-image: url('/img/kkutu/shop/stn_b.gif'); color: #FFFFFF; border-radius: 3px; text-shadow: 0px 0px 2px #FFF; }
+.x-tn1_name{ background-image: url('/img/kkutu/shop/1tn_b.gif'); color: #FFFFFF; border-radius: 3px; text-shadow: 0px 0px 2px #FFF; }
+.x-tn2_name{ background-image: url('/img/kkutu/shop/2tn_b.gif'); color: #FFFFFF; border-radius: 3px; text-shadow: 0px 0px 2px #FFF; }
+.x-tn3_name{ background-image: url('/img/kkutu/shop/3tn_b.gif'); color: #FFFFFF; border-radius: 3px; text-shadow: 0px 0px 2px #FFF; }
+.x-mine_name{ background-image: url('/img/kkutu/shop/mine_b.gif'); color: #FFFFFF; border-radius: 3px; text-shadow: 0px 0px 2px #FFF; }
+.x-sky_name{ background-image: url('/img/bg/sky.gif'); color: #000000; border-radius: 3px; text-shadow: 0px 0px 2px #000; }
+.x-hyutu_name{ background-image: url('/img/kkutu/shop/hyutu.gif'); color: #FFFFFF; border-radius: 3px; text-shadow: 0px 0px 2px #FFF; }
+.x-hyutu2_name{ background-image: url('/img/kkutu/shop/hyutu2.gif'); color: #FFFFFF; border-radius: 3px; text-shadow: 0px 0px 2px #FFF; }
 .x-rainbow_namee{ font-weight: 900;
              background-clip: text;
              -webkit-background-clip: text;

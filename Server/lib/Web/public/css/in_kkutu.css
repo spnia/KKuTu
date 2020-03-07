@@ -31,7 +31,7 @@ equ{
 	width: 1380px;
 	height: 740px;
             left: -190px;
-            top: 0px;
+            top: 20px;
 }
 	#version{
 		position: absolute;
@@ -199,11 +199,11 @@ iframe{
 }
 .product-title{
 	border-bottom-color: #FFFFFF;
-	border-radius: 0px;
+	border-radius: 3px;
 	color: #FFFFFF;
 	background-color: #7C5AE2;
 }
-.product-title i{ color: #111111; }
+.product-title i{ color: #ffffff; }
 .dialog-front{ z-index: 3; }
 #comm-friends div{ float: left; }
 	.cf-item{ margin: 2px 0px; width: 100%; }
@@ -244,7 +244,6 @@ iframe{
 	.UserListBox div{ float: left; }
 	.UserListBox .product-body{ width: 190px; height: 330px; overflow-x: hidden; overflow-y: scroll; }
 	.users-item{ width: 190px; }
-		.users-image{ margin: 1px; width: 18px; height: 18px; }
 		.users-level{ margin: 1px; width: 18px; height: 18px; }
 		.users-name{ padding: 2px 0px 0px 3px; width: 147px; font-size: 13px; }
 		.users-item:hover{ cursor: pointer; background-color: #F4F4F4; }
@@ -850,11 +849,11 @@ iframe{
 		.my-stat-name{ padding-top: 3px; padding-left: 4px; width: 76px; height: 17px; font-weight: bold; }
 		.my-stat-record{ margin-top: 3px; width: 100%; }
 		.my-stat-ping{ margin-top: 3px; width: 100%; }
-		.my-okg{ border-radius: 5px; margin-top: 3px; width: 100%; height: 20px; overflow: hidden; background-color: #995511; }
+		.my-okg{ border-radius: 3px; margin-top: 3px; width: 100%; height: 20px; overflow: hidden; background-color: #995511; }
 			.my-okg .graph-bar{ background-color: #FFBB44; }
 		.my-okg-text{ margin-top: -15px; width: 100px; }
 	.my-level{ margin: 13px 0px; width: 190px; font-size: 15px; text-align: center; }
-	.my-gauge{ border-radius: 10px; margin: 3px 0px; width: 190px; height: 30px; overflow: hidden; background-color: #333333; }
+	.my-gauge{ border-radius: 3px; margin: 3px 0px; width: 190px; height: 30px; overflow: hidden; background-color: #333333; }
 		.my-gauge .graph-bar{ background-image: url('/img/kkutu/scorebar.png'); }
 	.my-gauge-text{ margin-top: -25px; width: 190px; }
 	.category-filter{
